@@ -72,9 +72,12 @@ func ExampleJaroWinkler() {
 	jw := metrics.NewJaroWinkler()
 	sim := jw.Compare("sort", "shirt")
 	fmt.Printf("(sort, shirt) similarity: %.2f\n", sim)
+	sim = jw.Compare("SN", "STFN")
+	fmt.Printf("(SN, STFN) similarity: %.2f\n", sim)
 
 	// Output:
-	// (sort, shirt) similarity: 0.80
+	// (sort, shirt) similarity: 0.81
+	// (SN, STFN) similarity: 0.58
 }
 
 func ExampleSmithWatermanGotoh() {
