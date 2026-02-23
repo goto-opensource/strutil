@@ -9,8 +9,7 @@ import (
 
 // JaroWinkler represents the Jaro-Winkler metric for measuring the similarity
 // between sequences.
-//
-//	For more information see https://en.wikipedia.org/wiki/Jaro-Winkler_distance.
+//   For more information see https://en.wikipedia.org/wiki/Jaro-Winkler_distance.
 type JaroWinkler struct {
 	// CaseSensitive specifies if the string comparison is case sensitive.
 	CaseSensitive bool
@@ -19,8 +18,7 @@ type JaroWinkler struct {
 // NewJaroWinkler returns a new Jaro-Winkler string metric.
 //
 // Default options:
-//
-//	CaseSensitive: true
+//   CaseSensitive: true
 func NewJaroWinkler() *JaroWinkler {
 	return &JaroWinkler{
 		CaseSensitive: true,
