@@ -18,8 +18,7 @@ type Jaro struct {
 // NewJaro returns a new Jaro string metric.
 //
 // Default options:
-//
-// CaseSensitive: true
+//   CaseSensitive: true
 func NewJaro() *Jaro {
 	return &Jaro{
 		CaseSensitive: true,
