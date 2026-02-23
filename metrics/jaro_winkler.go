@@ -49,8 +49,7 @@ func (m *JaroWinkler) Compare(a, b string) float64 {
 	// Calculate Jaro similarity.
 	similarity := jaro.Compare(a, b)
 
-	// Apply the standard Jaro-Winkler threshold of 0.7.
-	// Only add prefix bonus if the Jaro similarity is >= 0.7
+	// Apply a boost threshold of 0.7 and only add a prefix bonus if the strings are already similar
 	if similarity < 0.7 {
 		return similarity
 	}
